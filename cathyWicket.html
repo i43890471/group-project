@@ -2,41 +2,93 @@
 
 <html lang="en">
 <head>
-	<!-- Load Bootstrap -->
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Load Bootstrap -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <style>
+
+        *{
+            font-family: Arial;
+        }
+        h4{
+            font-size:26px;
+            color: #2B547E;
+            font-family:'Lucida Sans';
+            font-weight: normal;
+        }
+        blink{
+            -webkit-animation:blink 1.5s linear infinite;
+            -moz-animation:blink 1.5s linear infinite;
+            animation:blink 1.5s linear infinite;
+
+        }
+
+        @-webkit-keyframes blink {
+            0%{opacity:1;}
+            50%{opacity:0;}
+            100%{opacity:1;}
+
+        }
+
+        @-moz-keyframes blink{
+            0%{opacity:1;}
+            50%{opacity:0;}
+            100%{opacity:1;}
+        }
+
+        @keyframes blink {
+            0%{opacity:1;}
+            50%{opacity:0;}
+            100%{opacity:1;}
+
+        }
+        h5 {
+            color: palevioletred;
+            font-size: 15px;
+        }
+        p{
+            font-size: 15px;
+        }
+        .em {
+            height:19px;
+            width:19px;
+        }
+
+        </style>
 </head>
-
 <body>
-	<div style="padding:50px;"class="container">
-		<!-- Back to index.html -->
-		<a href="index.html" class="btn btn-info">back</a>
-		<!-- Employee Name -->
-		<h2>Cathy Wicket</h2>
+    <div style="padding:50px;"class="container">
+        <!-- Back to index.html -->
+        <a href="index.html" class="btn btn-info">back</a>
+        <!-- Employee Name -->
+        <h2>Cathy Wicket</h2>
 
-		<div class="media">
-			<div class="media-left">
-				<img class="img-oval" style="border:2px solid #DDD;width:100px;display:inline;" src="https://pbs.twimg.com/profile_images/1125351141/BettyWhite1.jpg"/>
-			</div>
-			<div class="media-body">
-				<!-- Employee Position -->
-				<h4 class="media-heading">Senior Manager</h4>
-				<div>
-					<!-- Employee Bio -->
-					<h5>Age</h5>
-					<p>
-						76
-					</p>
-					<h5>Email</h5>
-					<p>
-						cwicket@branstation.io
-					</p>
-					<h5>Bio</h5>
-					<p>
-						Storyfinder, Accountant, Truck Driver, Han Solo's College Roommate. I yell at inanimate objects.
-					</p>
-				</div>
-			</div>
-	    </div>
-	</div>
+        <div class="media">
+            <div class="media-left">
+                <img class="img-" style="border:2px solid #DDD;width:100px;display:inline;" src="https://pbs.twimg.com/profile_images/1125351141/BettyWhite1.jpg"/>
+            </div>
+            <div class="media-body">
+                <!-- Employee Position -->
+                <h4 class="media-heading">
+                    <blink><i class="em em-star"></i> Senior Governor <i class="em em-star"></i></blink>
+                    </h4>
+                <div>
+                    <!-- Employee Bio -->
+                    <h5>Age</h5>
+                    <p>
+                        75
+                    </p>
+                    <h5>Email</h5>
+                    <p>
+                        cathywicket@branstation.io
+                    </p>
+                    <h5>Bio</h5>
+                    <p>
+                        Band Artist, Senior Governor, Accountant, Truck Driver, Han Solo's College Student Leader. I yell at inanimate objects.
+                    </p>
+                </div>
+            </div>
+     </div>
+    </div>
 </body>
 </html>
